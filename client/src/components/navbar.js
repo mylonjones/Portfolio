@@ -6,9 +6,13 @@ import Contact from './contact.js'
 
 export default function Navbar(props) {
   return (<div className='navbar'>
-    <div style={{marginLeft: 10}}>
+    {/* <div style={{marginLeft: 10}}>
       😊 Smilin' Mylon
-    </div>
+    </div> */}
+    <img
+    src="smile.svg"
+    height="60"
+    width="60" />
     <div style={{display: 'flex'}}>
       <div className='link' onClick={()=> {props.changePage(<Home/>)}}>Home</div>
       <div className='link' onClick={()=> {props.changePage(<About/>)}}>About</div>

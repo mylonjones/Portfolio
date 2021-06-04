@@ -20,10 +20,16 @@ export default function Contact () {
   }
 
   function handleSubmit (e) {
-    // e.preventDefault()
+    e.preventDefault()
     console.log(contactInfo)
-    emailjs.send('service_sa9uvh2', 'template_bamcn7j', contactInfo, 'user_VkSshblaLMjakGWAw9Ql1')
-
+    emailjs.send('service_sa9uvh2', 'template_bamcn7j', contactInfo, 'user_VkSshblaLMjakGWAw9Ql1').then(()=>{
+      alert('Your message was sent!')
+    })
+    setInfo({
+      name: '',
+      email: '',
+      message: ''
+    })
   }
 
 
@@ -34,7 +40,7 @@ export default function Contact () {
       <input name='name' value={contactInfo.name} onChange={handleText} className='input shared' type='text'></input>
       <br/>
       <label>Email</label>
-      <input name='email' value={contactInfo.enail} onChange={handleText} className='input shared' type='text'></input>
+      <input name='email' value={contactInfo.email} onChange={handleText} className='input shared' type='text'></input>
       <br/>
       <label>Message</label>
       <textarea name='message' value={contactInfo.message} onChange={handleText} className='message textArea shared'></textarea>
