@@ -7,14 +7,13 @@ import Board from './board.js'
 
 export default function Navbar(props) {
   return (<div className='navbar'>
-    {/* <div style={{marginLeft: 10}}>
-      😊 Smilin' Mylon
-    </div> */}
+    <div className='gradient'></div>
     <img
+    className='smile'
     src="smile.svg"
     height="60"
     width="60" />
-    <div style={{display: 'flex'}}>
+    <div className='navButton'>
       <div className='link' onClick={()=> {props.changePage(<Home/>)}}>Home</div>
       <div className='link' onClick={()=> {props.changePage(<About/>)}}>About</div>
       <a className='link' target='blank' href="./Mylon Jones Resume.pdf">Resume</a>
