@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:5.0.2
+    ports:
+      - 7017:27017
+  portfolio:
+    depends_on:
+    - 'mongo'
+    build: ./
+    ports:
+    - '3000:3000'

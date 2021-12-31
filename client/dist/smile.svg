@@ -2,9 +2,9 @@
 
  <g>
   <title>Layer 1</title>
-  <rect stroke="#161606" stroke-width="10" id="svg_1" height="200" width="195" y="67" x="53" fill="none"/>
-  <path transform="rotate(123.782 144.069 197.735)" stroke="#161606" id="svg_11" d="m111.70381,146.55286c82.13623,26.55749 62.73189,102.3637 62.73189,102.3637" stroke-width="10" fill="none"/>
-  <line stroke="#161606" id="svg_13" y2="140" x2="127" y1="140" x1="91" stroke-width="10" fill="none"/>
-  <ellipse ry="13.5" rx="14" id="svg_14" cy="138.5" cx="179" stroke-width="10" stroke="#161606" fill="none"/>
+  <rect stroke="#8aeb15" stroke-width="10" id="svg_1" height="200" width="195" y="67" x="53" fill="none"/>
+  <path transform="rotate(123.782 144.069 197.735)" stroke="#8aeb15" id="svg_11" d="m111.70381,146.55286c82.13623,26.55749 62.73189,102.3637 62.73189,102.3637" stroke-width="10" fill="none"/>
+  <line stroke="#8aeb15" id="svg_13" y2="140" x2="127" y1="140" x1="91" stroke-width="10" fill="none"/>
+  <ellipse ry="13.5" rx="14" id="svg_14" cy="138.5" cx="179" stroke-width="10" stroke="#8aeb15" fill="none"/>
  </g>
 </svg>

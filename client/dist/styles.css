@@ -1,98 +1,137 @@
 body {
   font-family: 'Courier New', monospace;
-  background-color: rgb(195, 250, 255);
+  /* background-color: rgb(195, 250, 255); */
+  background-color: black;
   margin: 0px;
 }
 
-.homepage {
-  text-align: center;
-  background-color: rgb(255, 246, 195);
-  color: rgb(0, 199, 199);
-  width: 70%;
-  margin: auto;
-  position: relative;
-  top: 50px;
-  border: 5px solid white;
-  border-radius: 70px;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.gradient {
-  position: fixed;
-  height: 70px;
-  width: 100%;
-  background: linear-gradient(to right, rgb(0, 255, 255), 15%, white);
+:root {
+  --border-color: #7ff0ff;
+  --main-background-color: black;
+  --text-color: #8aeb15;
+  --standard-border: 5px solid var(--border-color);
+  --button-color: #00523fe6;
+  --glow: 0 0 20px 12px var(--border-color);
 }
 
 .navbar {
-  margin-bottom: 50px;
   font-size: 30px;
   line-height: 70px;
   height: 70px;
   display: flex;
   justify-content: space-between;
+  background: var(--button-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  /* border-bottom: 1px solid  var(--border-color);
+  box-shadow: 0 0 6px 4px var(--border-color); */
+  animation: color-change-thin linear 4s infinite;
 }
 
 .navButton {
-  z-index: 1;
   display: flex;
   align-items: center;
 }
 
+.spacer {
+  padding-top: 70px;
+}
+
+.homepage {
+  text-align: center;
+  color: var(--text-color);
+  width: 70%;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  border-radius: 70px;
+  padding: 20px;
+  background-color: var(--main-background-color);
+  /* border: var(--standard-border);
+  box-shadow: var(--glow); */
+  animation: color-change linear 4s infinite;
+}
+
+.portfolioButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 .smile {
-  z-index: 1;
+  /* z-index: 1; */
+  color:  var(--border-color);
+}
+
+.project {
+  font-size: 18px;
+  /* border: 3px solid rgb(0, 255, 255); */
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  margin: auto;
+  background-color: var(--button-color);
+
 }
 
 .link {
   margin: 0px 8px 0px 8px;
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
 }
 
 .about {
     line-height: 1.3;
-    background-color: rgb(255, 246, 195);
-    color: rgb(40 146 146);
+    background-color: var(--main-background-color);
+    color: var(--text-color);
     width: 70%;
     font-size: large;
     margin: auto;
+    margin-bottom: 50px;
     position: relative;
     top: 50px;
-    border: 5px solid white;
     border-radius: 70px;
-    padding: 20px;
-    box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    /* border: var(--standard-border);
+    box-shadow: var(--glow); */
+    animation: color-change linear 4s infinite;
 }
 
 .selfie {
-  border: 5px solid white;
   border-radius: 70px;
   float: left;
-  margin-right: 20px;
+  margin: 0 40px 40px 0;
+  /* border: var(--standard-border);
+  box-shadow: var(--glow); */
+  animation: color-change linear 4s infinite;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  margin: 50px 30px 0 30px;
   height: 550px;
   padding: 0 20px;
 }
 
 .styledForm {
+  color: var(--text-color);
   width: 100%;
   max-width: 700px;
   padding: 40px;
-  background-color: #fff;
-  border-radius: 10px;
+  background-color: var(--main-background-color);
+  border-radius: 70px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+  /* border: var(--standard-border);
+  box-shadow: var(--glow); */
+  animation: color-change linear 4s infinite;
 }
 
 .shared {
-  background-color: #eee;
+  background-color: white;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -108,7 +147,7 @@ body {
 }
 
 .textArea {
-  background-color: #eee;
+  background-color: white;
   width: 100%;
   min-height: 100px;
   resize: none;
@@ -116,8 +155,8 @@ body {
 
 .button {
   display: block;
-  background-color:  rgb(195, 250, 255);
-  color: black;
+  background-color: var(--button-color);
+  color: var(--text-color);
   font-size: .9rem;
   border: 0;
   border-radius: 5px;
@@ -130,9 +169,9 @@ body {
 
 /* connect four styles */
 
-.red {background-color: #fb7f27;}
-.blue {background-color: rgb(195, 249, 254);}
-.none {background-color: rgb(255, 246, 195);}
+.red {background:radial-gradient(circle, rgba(249,110,110,1) 20%, black 100%);}
+.blue {background:radial-gradient(circle, rgba(61,226,255,1) 20%, black 100%);}
+.none {background-color: var(--main-background-color);}
 
 .box {
     border-style: solid;
@@ -162,17 +201,17 @@ body {
 
 .board {
   font-size: 20px;
-  background-color: rgb(255, 246, 195);
-  color: rgb(0, 199, 199);
+  background-color: var(--main-background-color);
+  color: var(--text-color);
   width: 700px;
   margin: auto;
   position: relative;
   top: 50px;
-  border: 5px solid white;
   border-radius: 70px;
   padding: 20px;
-  box-shadow: 0px 0px 20px 0 rgba(59, 2, 2, 0.2);
-  margin-top: -35px;
+  /* border: var(--standard-border);
+  box-shadow: var(--glow); */
+  animation: color-change linear 4s infinite;
 }
 
 .gameHeader {
@@ -191,12 +230,15 @@ html { font-size:100%; }
 @media (max-width: 645px) {
   .navbar {
     font-size: 5vw;
-    text-decoration: underline;
+    text-decoration: underline var(--text-color);
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
     height: 150px;
-    margin-bottom: -30px;
+    /* margin-bottom: -30px; */
+  }
+  .spacer {
+    padding-top: 150px;
   }
 }
 
@@ -227,4 +269,150 @@ html { font-size:100%; }
     margin-right: 2vw;
   }
 
+}
+
+
+
+
+/* Q&A styles */
+
+.app {
+  font-family: Helvetica, sans-serif; background-Color: rgb(249,249,249);
+  padding: 30px;
+}
+.p-tooltip {
+  /* Used to position the arrow */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Show the arrow and content when hovering the trigger element */
+
+.p-tooltip-arrow {
+  /* Invisible by default */
+  opacity: 0;
+
+  /* Border */
+  border: 8px solid transparent;
+  border-top-color: black;
+
+  /* Position */
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 8px);
+
+  /* Zero size */
+  height: 0;
+  width: 0;
+
+  /* Displayed on top of other element */
+  z-index: 10;
+}
+
+.p-tooltip-content {
+  /* Invisible by default */
+  opacity: 0;
+
+  /* Background color, must be the same as the border color of arrow */
+  background-color: black;
+  border-radius: 2px;
+
+  /* Position */
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -8px);
+
+  /* Displayed on top of other element */
+  z-index: 10;
+}
+
+.textBox {
+/* position: fixed;
+z-index: 1; */
+border: 1px solid black;
+margin: 10px;
+display: flex;
+flex-direction: column;
+padding: 15px;
+border-radius: 4px;
+width: 50%;
+height: 210px;
+justify-content: space-between;
+
+}
+
+.nameInput {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  height: 25px;
+
+}
+
+.answerInput {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 80px;
+  resize: none;
+
+}
+
+/* transition colors */
+
+@keyframes color-change {
+  0% {
+    border: 5px solid #ff7f7f;
+    box-shadow: 0 0 20px 12px #ff7f7f;
+  }
+  20% {
+    border: 5px solid #9d7fff;
+    box-shadow: 0 0 20px 12px #9d7fff;
+  }
+  40% {
+    border: 5px solid #7fefff;
+    box-shadow: 0 0 20px 12px #7fefff;
+  }
+  60% {
+    border: 5px solid #7fff87;
+    box-shadow: 0 0 20px 12px #7fff87;
+  }
+  80% {
+    border: 5px solid#f3ff7f;
+    box-shadow: 0 0 20px 12px#f3ff7f;
+  }
+  100% {
+    border: 5px solid  #ff7f7f;
+    box-shadow: 0 0 20px 12px  #ff7f7f;
+  }
+}
+
+@keyframes color-change-thin {
+  0% {
+    border-bottom: 1px solid #ff7f7f;
+    box-shadow: 0 0 6px 4px #ff7f7f;
+  }
+  20% {
+    border-bottom: 1px solid #9d7fff;
+    box-shadow: 0 0 6px 4px #9d7fff;
+  }
+  40% {
+    border-bottom: 1px solid #7fefff;
+    box-shadow: 0 0 6px 4px #7fefff;
+  }
+  60% {
+    border-bottom: 1px solid #7fff87;
+    box-shadow: 0 0 6px 4px #7fff87;
+  }
+  80% {
+    border-bottom: 1px solid#f3ff7f;
+    box-shadow: 0 0 6px 4px#f3ff7f;
+  }
+  100% {
+    border-bottom: 1px solid  #ff7f7f;
+    box-shadow: 0 0 6px 4px  #ff7f7f;
+  }
 }

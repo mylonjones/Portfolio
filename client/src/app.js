@@ -1,14 +1,16 @@
 import React from 'react'
 import Navbar from './components/navbar.js'
 import Home from './components/home.js'
+import QandA from './Q&A/q&a.jsx'
 
 export default class App extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      page: <Home></Home>
-    }
     this.changePage = this.changePage.bind(this)
+    this.state = {
+      page: <Home changePage={this.changePage}></Home>
+    }
+
   }
 
   changePage (page) {
@@ -20,8 +22,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar changePage={this.changePage}></Navbar>
-        {this.state.page}
+        <Navbar changePage={this.changePage}/>
+        <div className='spacer'>
+          {this.state.page}
+        </div>
       </div>
     )
   }
