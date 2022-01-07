@@ -5,16 +5,16 @@ import Board from './board.js'
 export default function Home (props) {
   console.log(props.changePage)
   return(<div className='homepage'>
-    <div style={{fontSize: 40}}>
+    <div className='name'>
       Mylon Jones
     </div>
-    <div style={{fontSize: 25, margin: 30}}>
+    <div className='title'>
       Web Developer
     </div>
     <div>
     {'AWS | Axios | CSS  | Docker | EmailJS | Express | GIT | HTML | JavaScript | MongoDB | NGINX | Node | PostgreSQL | Postman | React'}
     </div>
-    <div style={{fontSize: 25, margin: 30}}>
+    <div className='title'>
       Portfolio Projects
     </div>
     <div className='portfolioButtons'>

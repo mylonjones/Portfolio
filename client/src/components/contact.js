@@ -35,7 +35,7 @@ export default function Contact () {
 
   return (<div className='wrapper'>
     <form onSubmit={handleSubmit} className='styledForm'>
-      <h2>Contact Form</h2>
+      <div className='title'>Contact Form</div>
       <label>Name</label>
       <input name='name' value={contactInfo.name} onChange={handleText} className='input shared' type='text'></input>
       <br/>

@@ -53,6 +53,15 @@ body {
   animation: color-change linear 4s infinite;
 }
 
+.name {
+  font-size: 40px;
+}
+
+.title {
+  font-size: 25px;
+  margin: 30px;
+}
+
 .portfolioButtons {
   display: flex;
   justify-content: space-evenly;
@@ -231,14 +240,40 @@ html { font-size:100%; }
   .navbar {
     font-size: 5vw;
     text-decoration: underline var(--text-color);
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    height: 150px;
-    /* margin-bottom: -30px; */
   }
-  .spacer {
-    padding-top: 150px;
+  .name {
+    font-size: 8vw;
+  }
+  .title {
+    font-size: 6vw;
+    margin: 20px;
+  }
+
+  .selfie {
+    border-radius: 70px;
+    margin: 0 25px 25px 0;
+    width: 30vw;
+  }
+  .about {
+    margin-bottom: 100px;
+    padding: 20px;
+  }
+  .styledForm {
+    padding: 20px;
+    height: fit-content;
+  }
+  .shared {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .button {
+    margin: 5px;
+  }
+  .wrapper {
+    width: 87%;
+    margin: auto;
+    margin-top: 50px;
   }
 }
 

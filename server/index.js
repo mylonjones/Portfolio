@@ -5,8 +5,9 @@ const port = 3000;
 const path = require('path');
 const router = require('./router.js');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
-
+app.use(compression());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
