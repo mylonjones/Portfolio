@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//use localhost for local use and mongo for deployment
 mongoose.connect('mongodb://mongo:27017/Q&A', { useNewUrlParser: true, useUnifiedTopology: true })
   .catch((err) => {
     console.error(err);

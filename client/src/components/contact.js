@@ -45,7 +45,7 @@ export default function Contact () {
       <label>Message</label>
       <textarea name='message' value={contactInfo.message} onChange={handleText} className='message textArea shared'></textarea>
       <br/>
-      <input className='button' type='submit'></input>
+      <input className='button send' value='Send' type='submit'></input>
     </form>
   </div>)
 }

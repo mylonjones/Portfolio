@@ -7,8 +7,8 @@ import Contact from './contact.js'
 export default function Navbar(props) {
   return (<div className='navbar'>
     <img
-    className='smile'
-    src="smile.svg"
+    className='logo'
+    src="Mylons logo.png"
     height="60"
     width="60" />
     <div className='navButton'>
