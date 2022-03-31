@@ -15,6 +15,14 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 
 app.use('/api/q&a', router);
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+})
+
 app.listen(port, () => {
   console.log(`serving at ${port}`);
 });

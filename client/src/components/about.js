@@ -6,19 +6,28 @@ export default function About () {
     <p>
       <img className='selfie' src='./selfie.jpg' width='200'/>
       <p>
-      My name is Mylon Jones. I am a Software Engineer specializing in full-stack web development. I became a software engineering because of the countless ways it can improve the world. I want to use my software engineering skills to make the world more interactive.
-      </p>
+        I am a software engineer and a graduate of Hack Reactor, an immersive software engineering
 
-      <p>
-      I am experienced and work comfortably alone, pair-programming, and in team collaboration. Among my various projects, I recently collaborated with a team of four engineers to design and build a full-stack web application that keeps track of vehicle maintenance using React, Express, and MongoDB. My philosophy is to do my job as well as I can, doing whatever it takes. I like to do as much as I can on my own, but when I reach a blocker I cannot overcome, I will reach out for guidance. I don’t just stop when I finish the basic tasks. I look to see if there is anything more that I can do.
-      </p>
+        boot-camp, where I gained hundreds of hours of experience programming and collaborating.
 
-      <p>
-      I aim to find a workplace where I can use creativity and problem solving to build diverse, ethical, and valuable tools and applications. I would be in a dynamic team of results-driven engineers whom I could hang out with outside of work on occasion. I would also like to be a mentor someday because I love sharing my knowledge and being as helpful to my fellow engineers as I can.
-      </p>
+        My experience includes the development of several full-stack web-apps in collaborative team
+        environments while applying Agile software development methods including peer reviews and
+        daily stand-ups. On one project I took the leading role over three other engineers where we
+        created a functional web-app in one week. My responsibilities were to generate requirements,
+        keep the team goal oriented, and develop the system interface. Most of my programming
+        experience is developing software in JavaScript and using Git for configuration management,
+        but I also have some experience with C and Java.
 
+        I have taken a few programming courses at community college and I am currently progressing towards a degree in Computer Science.
+      </p>
       <p>
-      Aside from these things, I am an amateur classical violinist and pianist, and I perform with my local community orchestra. Some of my favorite composers are Debussy, Dvořák, and Stravinsky.
+        If you would like to get in touch you can message me here through the contact page.
+      </p>
+      <p>
+        You can also email me at mylonndj1234@gmail.com
+      </p>
+      <p>
+        Find me on GitHub at https://github.com/mylonjones
       </p>
     </p>
   </div>)

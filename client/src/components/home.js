@@ -1,9 +1,7 @@
 import React from 'react'
-import QandA from '../Q&A/q&a.jsx'
-import Board from './board.js'
+import { Link } from "react-router-dom";
 
 export default function Home (props) {
-  console.log(props.changePage)
   return(<div className='homepage'>
     <div className='name'>
       Mylon Jones
@@ -18,8 +16,8 @@ export default function Home (props) {
       Portfolio Projects
     </div>
     <div className='portfolioButtons'>
-      <div className='project' onClick={()=> {props.changePage(<QandA/>)}}>{"Q&A Model"}</div>
-      <div className='project' onClick={()=> {props.changePage(<Board/>)}}>Connect 4</div>
+      <Link className='project' to='Q&A'>{"Q&A Model"}</Link>
+      <Link className='project' to="/Connect4">Connect 4</Link>
     </div>
   </div>)
 }

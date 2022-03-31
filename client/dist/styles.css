@@ -83,6 +83,8 @@ body {
   padding: 10px;
   cursor: pointer;
   margin: auto;
+  color: inherit;
+  text-decoration: inherit;
   background-color: var(--button-color);
 
 }

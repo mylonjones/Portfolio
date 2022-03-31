@@ -1,8 +1,5 @@
 import React from 'react'
-
-import Home from './home.js'
-import About from './about.js'
-import Contact from './contact.js'
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (<div className='navbar'>
@@ -12,9 +9,9 @@ export default function Navbar(props) {
     height="60"
     width="60" />
     <div className='navButton'>
-      <div className='link' onClick={() => {props.changePage(<Home changePage={props.changePage}/>)}}>Home</div>
-      <div className='link' onClick={() => {props.changePage(<About/>)}}>About</div>
-      <div className='link' onClick={() => {props.changePage(<Contact/>)}}>Contact</div>
+      <Link className='link' to='/'>Home</Link>
+      <Link className='link' to='About'>About</Link>
+      <Link className='link' to='Contact'>Contact</Link>
       <a className='link' target='blank' href="./Mylon Jones Resume.pdf">Resume</a>
     </div>
   </div>)
