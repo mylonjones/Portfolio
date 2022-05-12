@@ -167,10 +167,6 @@ body {
   resize: none;
 }
 
-.send {
-  /* margin: 10px; */
-}
-
 .button {
   display: block;
   background-color: var(--button-color);
@@ -227,8 +223,6 @@ body {
   top: 50px;
   border-radius: 70px;
   padding: 20px;
-  /* border: var(--standard-border);
-  box-shadow: var(--glow); */
   animation: color-change linear 4s infinite;
 }
 
