@@ -29,10 +29,8 @@ body {
   animation: color-change-thin linear 4s infinite;
 }
 
-.navButton {
-  display: flex;
-  align-items: center;
-}
+
+
 
 .spacer {
   padding-top: 70px;
@@ -92,8 +90,22 @@ body {
 .link {
   margin: 0px 8px 0px 8px;
   color: var(--text-color);
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: .8;
+}
+
+.active {
+  text-decoration: underline;
+  /* font-weight: bold; */
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
 }
 
 .about {
@@ -242,7 +254,6 @@ html { font-size:100%; }
 @media (max-width: 645px) {
   .navbar {
     font-size: 5vw;
-    text-decoration: underline var(--text-color);
   }
   .name {
     font-size: 8vw;

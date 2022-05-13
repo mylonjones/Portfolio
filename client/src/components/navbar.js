@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   return (<div className='navbar'>
@@ -9,9 +9,9 @@ export default function Navbar(props) {
     height="60"
     width="60" />
     <div className='navButton'>
-      <Link className='link' to='/'>Home</Link>
-      <Link className='link' to='About'>About</Link>
-      <Link className='link' to='Contact'>Contact</Link>
+      <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='/'>Home</NavLink>
+      <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='About'>About</NavLink>
+      <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='Contact'>Contact</NavLink>
       <a className='link' target='blank' href="./Mylon Jones Resume.pdf">Resume</a>
     </div>
   </div>)
