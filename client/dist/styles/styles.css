@@ -186,6 +186,7 @@ body {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: medium;
 }
 
 .input {
@@ -524,6 +525,10 @@ html {
 }
 
 @media (max-width: 645px) {
+  .link {
+    margin: 0 2vw;
+    font-size: 4.5vw;
+  }
   .navbar {
     font-size: 5vw;
   }
@@ -560,6 +565,15 @@ html {
     width: 87%;
     margin: auto;
     margin-top: 50px;
+  }
+  .portfolioButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolioButtons .project {
+    margin: .5rem auto;
   }
 }
 

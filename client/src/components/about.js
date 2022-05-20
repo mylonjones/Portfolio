@@ -4,7 +4,7 @@ export default function About () {
   return(<div className='about'>
 
     <p>
-      <img className='selfie' src='./selfie.jpg' width='200'/>
+      <img className='selfie' src='https://res.cloudinary.com/dzgsesdip/image/upload/c_thumb,w_200,f_auto,g_face/v1652992671/selfie_yhcsbw.jpg' alt="selfie of me"/>
       <p>
         I am a software engineer and a graduate of Hack Reactor, an immersive software engineering
 

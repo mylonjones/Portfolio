@@ -2,6 +2,11 @@
 html { font-size:100%; }
 
 @media (max-width: 645px) {
+  .link {
+    margin: 0 2vw;
+    font-size: 4.5vw;
+  }
+
   .navbar {
     font-size: 5vw;
   }
@@ -39,6 +44,13 @@ html { font-size:100%; }
     width: 87%;
     margin: auto;
     margin-top: 50px;
+  }
+
+  .portfolioButtons {
+    flex-direction: column;
+    .project {
+      margin: .5rem auto;
+    }
   }
 }
 

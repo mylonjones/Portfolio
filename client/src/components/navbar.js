@@ -5,9 +5,7 @@ export default function Navbar(props) {
   return (<div className='navbar'>
     <img
     className='logo'
-    src="Mylons logo.png"
-    height="60"
-    width="60" />
+    src="https://res.cloudinary.com/dzgsesdip/image/upload/w_60,f_auto/v1652993651/Mylons_logo_vietoh.png" />
     <div className='navButton'>
       <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='/'>Home</NavLink>
       <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='About'>About</NavLink>
