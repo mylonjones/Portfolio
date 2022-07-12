@@ -11,6 +11,7 @@ export default function Navbar(props) {
       <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='About'>About</NavLink>
       <NavLink className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='Contact'>Contact</NavLink>
       <a className='link' target='blank' href="./Mylon Jones Resume.pdf">Resume</a>
+      <NavLink  className={({ isActive }) => 'link' + (isActive ? ' active': '')} to='blog'>Blog</NavLink>
     </div>
   </div>)
 }

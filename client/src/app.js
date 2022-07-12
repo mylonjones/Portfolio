@@ -5,6 +5,8 @@ import QandA from './Q&A/q&a.jsx'
 import Board from './components/board.js'
 import Contact from './components/contact.js'
 import About from './components/about.js'
+import AllPosts from "./components/AllPosts.js"
+import OnePost from "./components/OnePost.js"
 import { Routes, Route, Link } from "react-router-dom";
 
 export default class App extends React.Component {
@@ -23,6 +25,8 @@ export default class App extends React.Component {
             <Route path="/Q&A" element={<QandA />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="blog" element={<AllPosts />} exact />
+            <Route path=":slug" element={<OnePost />} />
           </Routes>
         </div>
       </div>

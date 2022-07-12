@@ -147,6 +147,39 @@ body {
           animation: color-change linear 4s infinite;
 }
 
+.blogPost {
+  min-height: 200px;
+  line-height: 1.3;
+  background-color: var(--main-background-color);
+  color: var(--text-color);
+  width: 70%;
+  font-size: large;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  top: 50px;
+  border-radius: 70px;
+  padding: 40px;
+  -webkit-animation: color-change linear 4s infinite;
+          animation: color-change linear 4s infinite;
+}
+
+.blogPost .blogImage {
+  height: 200px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.blogPost .header {
+  margin: 0 0 20px 0;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.blogPost .blogContent {
+  marigin: 0;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
