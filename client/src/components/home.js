@@ -39,6 +39,7 @@ export default function Home (props) {
     <div className='portfolioButtons'>
       <Link className='project' to='Q&A'>{"Q&A Model"}</Link>
       <Link className='project' to="/Connect4">Connect 4</Link>
+      <Link className='project' to="/sheetmusic">SheetMusic</Link>
     </div>
     <div id='clock' style={{padding: '1rem'}}/>
   </div>)
